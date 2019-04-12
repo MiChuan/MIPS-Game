@@ -16,7 +16,8 @@ O jogo 4 em linha consiste na seguinte ideia: dois jogadores devem preencher uma
 ## Authors
 
 * **Daniel Nunes Chodhury** - [danielncc](https://github.com/danielncc)
-* **João Pedro Kohls Bast** 
+* **João Pedro Kohls Bast** - [jpbast](https://github.com/jpbast)
+
 
 ## License
 
