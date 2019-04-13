@@ -631,7 +631,7 @@ orqm1:			lw $t6,matriz($t7)
 			nop
 #    ^
 #   /
-oldiag2:	move $s6,$s4#qnts bolas j· encontradas
+oldiag2:	move $s6,$s4#qnts bolas j√° encontradas
 		li $s4,-1#l
 		li $k0,7#tipo de vitoria (diagonal / para cima)
 		li $s5,1#c 
@@ -899,7 +899,7 @@ fimtest:	jr $ra
 		nop
 #-------------------------------------------------\\--------------------------------------------------------------
 
-#verifica se a posiÁ„o desejada j· est· ocupada-------------------------------------------------------------------
+#verifica se a posi√ß√£o desejada j√° est√° ocupada-------------------------------------------------------------------
 verificaPosicao1:li $t9,140
 		li $t7, 0
 		li $t6,0
@@ -929,7 +929,7 @@ insere:		li $t8, 1
 		nop
 		
 		
-erro: 		li $t7,1 #retorno da funÁ„o
+erro: 		li $t7,1 #retorno da fun√ß√£o
 		#la $a0, mensagemErro
 		#li $v0, 4
 		#syscall
@@ -1347,7 +1347,7 @@ menuop:	inserirint("                4 EM LINHA\n\n1) JOGAR\n2) AJUDA\n3) ON/OFF 
 			nop
 			beq $a0,4,eq4
 			nop
-			msgdialog ("              OpÁ„o inv·lida!\nInsira outra opÁ„o.",2)
+			msgdialog ("              Op√ß√£o inv√°lida!\nInsira outra op√ß√£o.",2)
 			j menuop
 			nop
 eq1:			
@@ -1356,7 +1356,7 @@ eq1:
 eq2:			li $a2,45
 			li $a3,100
 			midi(70,2000,$a2,$a3)
-			msgdialog ("                      AJUDA\n\n    Forme 4 peÁas da sua cor em sequÍncia \nem qualquer direÁ„o antes de seu advers·rio\n\n",1)
+			msgdialog ("                      AJUDA\n\n    Forme 4 pe√ßas da sua cor em sequ√™ncia \nem qualquer dire√ß√£o antes de seu advers√°rio\n\n",1)
 			j menuop
 			nop
 eq3:			#not $k1,$k1
@@ -1377,7 +1377,7 @@ eq4:			confirmdialog("Deseja sair do jogar?")
 			Termino
 eqnone:			beq $a1,-2,eq4
 			nop
-			msgdialog ("              OpÁ„o inv·lida!\nInsira outra opÁ„o",2)
+			msgdialog ("              Op√ß√£o inv√°lida!\nInsira outra op√ß√£o",2)
 			j menuop
 			nop		
 #fimmenu:	jr $ra	                        
